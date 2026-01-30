@@ -1,73 +1,120 @@
-# React + TypeScript + Vite
+🌐 Satyanshu Bhardwaj — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for my personal portfolio website, built to showcase my projects, skills, and experience in Robotics, IoT, and Software Development.
 
-Currently, two official plugins are available:
+The website is developed using React, TypeScript, Vite, and Tailwind CSS, with a modern UI and fast performance, and is deployed publicly for anyone to view.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Live Website
 
-## React Compiler
+👉 Live Demo:
+https://portfolio-v1.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+🛠 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Frontend: React 19 + TypeScript
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Build Tool: Vite
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Styling: Tailwind CSS + Tailwind Animations
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+UI Components: Radix UI
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Icons: Lucide React
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Forms & Validation: React Hook Form + Zod
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Charts: Recharts
+
+Theme Handling: next-themes
+
+Deployment: Vercel
+
+✨ Features
+
+⚡ Fast and lightweight Vite-based build
+
+🎨 Modern responsive UI with Tailwind CSS
+
+🌙 Light / Dark mode support
+
+🧩 Reusable UI components (Radix UI)
+
+📱 Fully responsive for mobile, tablet, and desktop
+
+🚀 Continuous deployment via GitHub + Vercel
+
+📁 Project Structure
+app/
+├── public/            # Static assets
+├── src/
+│   ├── components/    # Reusable UI components
+│   ├── pages/         # Page-level components
+│   ├── hooks/         # Custom React hooks
+│   ├── styles/        # Global styles
+│   ├── App.tsx        # Root component
+│   └── main.tsx       # Entry point
+├── index.html
+├── tailwind.config.js
+├── vite.config.ts
+└── package.json
+
+🧑‍💻 Local Development
+Prerequisites
+
+Node.js 18+ (Node 20 recommended)
+
+npm
+
+Setup
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+
+Then open:
+
+http://localhost:5173
+
+🏗 Build for Production
+npm run build
+npm run preview
+
+
+The production-ready files will be generated in the dist/ directory.
+
+🌍 Deployment
+
+This project is deployed using Vercel with automatic CI/CD:
+
+GitHub → Vercel → Live Website
+
+
+Every push to the main branch triggers an automatic redeploy.
+
+📌 Purpose of This Project
+
+This portfolio is designed to:
+
+Showcase my technical skills and projects
+
+Provide a central place to share my work with recruiters and collaborators
+
+Demonstrate clean UI design and modern frontend practices
+
+📫 Contact
+
+If you’d like to connect or collaborate:
+
+GitHub: https://github.com/Satyanshu9
+
+Email: satyanshu.bhardwaj123@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/satyanshu-bhardwaj-b88604242/
+
+📄 License
+
+This project is for personal portfolio use.
+Feel free to explore the code, but please do not reuse the design or content without permission.
